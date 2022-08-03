@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/general.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="page">POSTS</h1>
+
+    <ul class="navbar">
+        <li class="navbar_item">
+            <a class="navbar_link" href="./index.html">Home</a>
+        </li>
+
+        <li class="navbar_item">
+            <a class="navbar_link" href="./posts.html">Create post</a>
+        </li>
+
+        <li class="navbar_item">
+            <a class="navbar_link" href="./login.html">Login</a>
+        </li>
+
+        <li class="navbar_item">
+          <a class="navbar_link" href="./admin.html">Admin</a>
+      </li>
+    </ul>
+
+    <form id="form">
+      <div class="div">
+        <label>
+          date
+
+          <input
+            id="date"
+            required
+            type="text"
+            value="2022-12-20"
+            placeholder="2022-12-20"
+          />
+        </label>
+
+        <label>
+          time
+
+          <input
+            id="time"
+            required
+            type="text"
+            value="13:00"
+            placeholder="13:00"
+          />
+        </label>
+
+        <label>
+          category
+
+          <input
+            id="category"
+            required
+            type="text"
+            value="Information Technologies"
+            placeholder="Information Technologies"
+          />
+        </label>
+
+        <label>
+          subcategory
+
+          <input
+            id="subcategory"
+            required
+            type="text"
+            value="JAVA"
+            placeholder="JAVA"
+          />
+        </label>
+
+        <div>
+          <label>
+            <input
+              class="event_type"
+              required
+              type="radio"
+              name="event_type"
+              value="online"
+              checked
+            />
+            Online
+          </label>
+
+          <label>
+            <input
+              class="event_type"
+              required
+              type="radio"
+              name="event_type"
+              value="offline"
+            />
+            Offline
+          </label>
+        </div>
+
+        <label>
+          link
+
+          <input
+            id="link"
+            required
+            type="text"
+            value="https://www.youtube.com/liver24"
+            placeholder="link eg: https://www.youtube.com/liver24"
+          />
+        </label>
+      </div>
+
+      <div>
+        Tashkilotchi
+
+        <div>
+          <label>
+            Jismoniy shaxs
+
+            <input
+              class="personality"
+              required
+              type="radio"
+              name="personality"
+              value="jismoniy"
+            />
+          </label>
+
+          <label>
+            Yuridik shaxs
+
+            <input
+              class="personality"
+              required
+              type="radio"
+              name="personality"
+              value="yuridik"
+              checked
+            />
+          </label>
+        </div>
+
+        <label>
+            Yuridik nomi
+            <input id="company" type="text" placeholder="Najot Ta’lim MCHJ" value="Najot Ta’lim MCHJ">
+        </label>
+
+        <label>
+            Ism Sharifi
+            <input id="fullname" type="text" placeholder="Abbos Janizakov" value="Abbos Janizakov" required>
+        </label>
+
+        <label>
+            Kasbi(lavozimi)
+            <input id="profession" type="text" placeholder="Software engineer" value="Software engineer" required>
+        </label>
+
+        <label>
+            tel_1
+            <input id="contact1" type="text" placeholder="998580055" value="998580055" required>
+        </label>
+
+        <label>
+            tel_2
+            <input id="contact2" type="text" placeholder="904541515" value="904541515">
+        </label>
+      </div>
+
+      POST
+      
+      <div>
+        
+        <label>
+            Title
+            <input id="title" type="text" placeholder="title" value="Flutter nima?" required>
+        </label>
+
+        <label>
+            Descripton
+            <input id="description" type="title" placeholder="description" value="Flutter afzallik jihatlari ..." required>
+        </label>
+
+        <label>
+            Upload img
+            <input id="img" type="file" accept="image/*" placeholder="upload img" required>
+        </label>
+
+        <label>
+            Title
+            <input id="text" type="text" placeholder="text" value="Flutter bu ..." required>
+        </label>
+      </div>
+      <button id="submit">submit</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js"></script>
+
+
+    <script src="./utils/utils.js"></script>
+
+    <script src="./js/posts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="page">Admin</h1>
+
+    <ul class="navbar">
+        <li class="navbar_item">
+            <a class="navbar_link" href="./index.html">Home</a>
+        </li>
+
+        <li class="navbar_item">
+            <a class="navbar_link" href="./posts.html">Create post</a>
+        </li>
+
+        <li class="navbar_item">
+            <a class="navbar_link" href="./login.html">Login</a>
+        </li>
+
+        <li class="navbar_item">
+          <a class="navbar_link" href="./admin.html">Admin</a>
+      </li>
+    </ul>
+
+    <ul class="post_list"></ul>
+
+    <template id="post_template">
+      <li class="post_item">
+        <h4 class="number">1</h4>
+
+        <div class="box">
+          <h1 class="event_category">Information Technologies</h1>
+
+          <time class="event_date">2022-12-20 13:00</time>
+
+          <p class="event_type">online</p>
+
+          <a class="event_link" href="https://www.youtube.com/">link</a>
+        </div>
+
+        <div class="box">
+          <h3 class="organiser_fullname">Abbos Janizakov</h3>
+          <h4 class="organiser_profession">Software engineer</h4>
+          <p class="organiser_tel1">998580055</p>
+          <p class="organiser_tel2">904541515</p>
+        </div>
+
+        <img
+          class="post_image"
+          src="https://pressa-events-server.herokuapp.com/img-1659497268541-174452207.jpg"
+          alt="img"
+          width="200"
+          height="200"
+        />
+
+        <div class="box">
+          <h3>About event</h3>
+          <h4 class="post_title">Flutter nima?</h4>
+          <h5 class="post_desc">Flutter afzallik jihatlari ...</h5>
+          <p class="post_text">Flutter bu ...</p>
+        </div>
+
+        <div class="box">
+          <button class="active">Activate</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </li>
+    </template>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js"></script>
+    <script src="./utils/utils.js"></script>
+    <script src="./js/admin.js"></script>
+
+    <script>
+
+
+
+         
+        
+        
+        
+        
+    </script>
+    
+  </body>
+</html>
